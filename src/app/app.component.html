@@ -1,7 +1,9 @@
 <nav>
-  <ul>
-    <a routerLink="home">Home</a>
-    <a  routerLink="form">Form></a> 
-  </ul>
+      <a class="button" routerLinkActive ="home" routerLinkActive ="ActiveButton" >Home</a> 
+      <a class="button" routerLinkActive ="form"  routerLinkActive ="ActiveButton">Form</a>
+
 </nav>
-<!-- <router-outlet></router-outlet> -->
+<app-home></app-home>
+<app-form></app-form>
+
+<router-outlet></router-outlet>

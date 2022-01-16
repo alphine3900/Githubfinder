@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
+import { FormComponent } from './form/form.component';
+
 
 @NgModule({
   declarations: [
@@ -11,8 +12,14 @@ import { HomeComponent } from './home/home.component';
     FormComponent,
     HomeComponent
   ],
-  imports: [
-    BrowserModule
+  imports: [ 
+    
+    BrowserModule,
+    RouterModule.forRoot([
+      
+      {path: 'home', component:HomeComponent },
+      {path: 'form', component:FormComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
