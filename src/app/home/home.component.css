@@ -1,0 +1,12 @@
+h1{
+text-align: center;
+}
+p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+ul li{
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,5 +1,9 @@
-nav a{
+.nav li{
     float: right;
+    padding-right: 50px;
+}
+.nav{
+    background-color: red;
 }
 
 .button {
