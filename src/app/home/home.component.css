@@ -10,3 +10,15 @@ ul li{
     font-size: 30px;
     font-weight: bold;
 }
+.image{
+float: right;
+/* width: 70px; */
+/* height: 200px; */
+margin-top: -450px;
+
+}
+#me{
+width: 600px;
+    height: 600px;
+    border-radius: 400px;
+}

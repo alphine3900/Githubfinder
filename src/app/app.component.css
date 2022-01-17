@@ -1,6 +1,7 @@
 .nav li{
-    float: right;
+    /* float: right; */
     padding-right: 50px;
+    display: inline;
 }
 .nav{
     background-color: red;
