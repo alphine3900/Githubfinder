@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [ 
     
