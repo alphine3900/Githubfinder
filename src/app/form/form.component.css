@@ -22,3 +22,7 @@ h1{
     width: 400px;
     border-radius: 200px;
 }
+p{
+    font-size: 20px;
+    text-align: center;
+}
