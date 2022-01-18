@@ -1,24 +1,7 @@
-   <!-- <div class="form"> -->
-   <!-- <h1>GIT SEARCH</h1> -->
-<!-- <form class="user" > -->
-
-        <!-- <label for="name">github username</label> <br> <br> <br> -->
-        <!-- <input type="text" placeholder="github username" id="input"> <br> -->
-        
-          <p>Name is required</p> 
-       
-<!-- </form> -->
-
-
-<!-- <button type="submit" id="btn" class="btn btn-success">search</button> -->
- <!-- </div>  -->
-
-  
-
 
 <div class="user">
     <h1>GIT SEARCH</h1>
-<div class="formcards card">
+<div class="">
     <form action="">
         <input   type="text"  name="username" id="username" placeholder="Enter github username"> <br> <br>
         <p>Username is required</p> <br> <br>
@@ -26,18 +9,11 @@
     </form> 
  </div>
 </div> 
-<div class="result card" *ngIf="users">
-    <img src="{{ users.avatar_url }}" alt="" width="100%" height="200px">
-    <div class="card-body">
-        <div class="login"> {{ users.login }} {{ users.name }} </div>
+
+        <div class="login"> {{users.login}} {{ users.name }} </div>
+        <div class="repository"> Date Created: {{ users.created_at | date: 'short' }} </div>
+        <div class="repository"> Public Repo: {{ users.public_repos }} </div>
+       <div class="like"> Followers: {{ users.followers }} </div>
+       <div class="like"> Following: {{users.following }} </div>
+  
     
-    <div class="flex_cards">
-        <div class="repos"> Date Created: {{ users.created_at | date: 'short' }} </div>
-        <div class="repos"> Public Repo: {{ users.public_repos }} </div>
-    </div>
-   <div class="flex_cards">
-       <div class="follow"> Followers: {{ users.followers }} </div>
-       <div class="follow"> Following: {{users.following }} </div>
-   </div>
-    </div>
-</div>
