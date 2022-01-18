@@ -2,19 +2,21 @@
     background-color: cadetblue;
 }
 .user{
-
     text-align: center;
+    background-color: cadetblue;
+   
 }
 h1{
+    font-weight: bold;
     text-align: center;
 }
-#btn{ margin-left: 650px;
+#btn{ margin-left: 0px;
     text-align: center;
     height: 30px;
     width: 70px;
     border-radius: 200px;
 }
-#input{
+#username{
     text-align: center;
     height: 40px;
     width: 400px;

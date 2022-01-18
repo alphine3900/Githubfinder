@@ -7,7 +7,8 @@ import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { SearchuserService } from './search-service/search.service';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { FooterComponent } from './footer/footer.component';
       {path: 'form', component:FormComponent},
     ])
   ],
-  providers: [],
+  providers: [SearchuserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
