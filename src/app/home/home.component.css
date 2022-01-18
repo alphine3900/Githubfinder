@@ -10,10 +10,13 @@ ul li{
     font-size: 30px;
     font-weight: bold;
 }
+.home{ height: 700px;
+    background-color: cadetblue;
+}
 .image{
 float: right;
-/* width: 70px; */
-/* height: 200px; */
+  
+ height: 100px; 
 margin-top: -450px;
 
 }
