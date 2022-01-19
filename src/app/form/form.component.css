@@ -1,5 +1,7 @@
 .form{
-    background-color: cadetblue;
+    height: 600px;
+    overflow: hidden;
+  
 }
 .user{
     text-align: center;
