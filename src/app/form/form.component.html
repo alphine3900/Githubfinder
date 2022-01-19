@@ -1,24 +1,24 @@
-<div class="form">
-<div class="user">
-    <h1>GIT SEARCH</h1>
+<div class="form" appHighlight>
+<div class="user" >
+    <h1 class="mt-4">GIT SEARCH</h1>
  <div class="" >
     <form action=""  (ngSubmit)='sendusername()' #userForm='ngForm' >
-        <input   type="text" [(ngModel)]="search.name"  #name='ngModel'   name="username" id="username" placeholder="Enter github username"> <br> <br>
-        <p>Username is required</p> <br> <br>
-        <!-- <input type="submit" value="Submit" (click)="sendusername()" name="submit" id="btn"> -->
+        <input   type="text" [(ngModel)]="search.name"  #name='ngModel'   name="username" id="username" placeholder="Enter github username"> 
+        
+        <div [hidden]="name.valid || name.pristine" >
+            <p class="alert alert-danger" *ngIf="!search.name">Username is required</p>
+          </div>
+        
     </form> 
  </div>
-</div> <br> <br>
-<!-- <div class="about">
-   <h1>ABOUT</h1>
-   <p>Repos created within a duration of less than two months,the all fuctional,you can follow also to get alert on more projects <br> one can only get the project through repo cloning</p>
+</div> <br> <br> 
 
-</div> -->
-
-        <div class="login"> {{users.login}} {{ users.name }} </div>
-        <div class="repository"> Date Created: {{ users.created_at | date: 'short' }} </div>
-        <div class="repository"> Public Repo: {{ users.public_repos }} </div>
-       <div class="like"> Followers: {{ users.followers }} </div>
-       <div class="like"> Following: {{users.following }} </div>
-  
+<div appHighlight class="container text-center m-20"> 
+    <h2 class="login"> {{users.login}} {{ users.name }} </h2>
+    <h2 class="repository"> Date Created: {{ users.created_at | date: 'short' }} </h2>
+    <h2 class="repository"> Public Repo: {{ users.public_repos }} </h2>
+    <h2 class="like"> Followers: {{ users.followers }} </h2>
+    <h2 class="like"> Following: {{users.following }} </h2>
+</div>
+       
  </div>

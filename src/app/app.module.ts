@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchuserService } from './search-service/search.service';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     FormComponent,
     HomeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    HighlightDirective
   ],
   imports: [ 
     
