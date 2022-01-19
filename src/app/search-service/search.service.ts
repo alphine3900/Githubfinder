@@ -1,19 +1,4 @@
-// import { Injectable } from '@angular/core';
-// import { environment } from 'src/environments/environment';
-// import { HttpClient } from '@angular/common/http';
-// import { Repository} from '../repository/Repository';
-// import { Username } from '../username/Username';
 
-
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class SearchService {
-//   user!:Username;
-//   search!:Repository;  
-
-//   constructor(private http:HttpClient) { }
-// }
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
