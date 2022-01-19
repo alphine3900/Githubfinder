@@ -1,20 +1,19 @@
 
 <div class="user">
     <h1>GIT SEARCH</h1>
-<div class="">
-    <form action="">
-        <input   type="text"  name="username" id="username" placeholder="Enter github username"> <br> <br>
+ <div class="" >
+    <form action=""  (ngSubmit)='sendusername()' #userForm='ngForm' >
+        <input   type="text" [(ngModel)]="search.name"  #name='ngModel'   name="username" id="username" placeholder="Enter github username"> <br> <br>
         <p>Username is required</p> <br> <br>
-        <input type="submit" value="Submit" (click)="sendusername()" name="submit" id="btn">
+        <!-- <input type="submit" value="Submit" (click)="sendusername()" name="submit" id="btn"> -->
     </form> 
  </div>
 </div> <br> <br>
-<div class="about">
+<!-- <div class="about">
    <h1>ABOUT</h1>
    <p>Repos created within a duration of less than two months,the all fuctional,you can follow also to get alert on more projects <br> one can only get the project through repo cloning</p>
 
-</div>
-
+</div> -->
 
         <div class="login"> {{users.login}} {{ users.name }} </div>
         <div class="repository"> Date Created: {{ users.created_at | date: 'short' }} </div>

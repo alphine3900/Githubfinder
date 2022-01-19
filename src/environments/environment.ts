@@ -5,7 +5,7 @@
 export const environment = {
 
   production: false,
-  apiUrl:'https://api.github.com/users/daneden + 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'
+  apiUrl:'https://api.github.com/users/ + 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'
 };
 
 /*

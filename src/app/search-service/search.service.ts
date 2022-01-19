@@ -11,7 +11,7 @@ import { Username } from '../username/Username'
 })
 
 export class SearchuserService {
-  username = "";
+  username = "Alphine3900";
   
  
 

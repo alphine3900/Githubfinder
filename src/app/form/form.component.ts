@@ -10,20 +10,32 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  username:string = "";
-  users:any;
+  username:string = "Alphine3900";
+  users:any=[];
+  search:any={name:""}
   constructor(private SearchuserService:SearchuserService) { }
 
   ngOnInit(): void {
+
+    this.SearchuserService.getusers().subscribe((data) => {
+      this.users = data;
+      console.log(data);
+    },alphine  => {
+      console.log(alphine.message)
+    } )
   }
   sendusername(){
-    this.SearchuserService.getusername(this.username);
+    this.SearchuserService.getusername(this.search.name);
     this.searchUser();
   }
   searchUser(){
     this.SearchuserService.getusers().subscribe((data) => {
       this.users = data;
-      console.log(this.users);
-    })
+      console.log(data);
+    console.log("mutwiri")},
+    
+    alphine  => {
+      console.log(alphine.message)
+    } )
   }
 }

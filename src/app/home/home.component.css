@@ -26,3 +26,17 @@ width: 600px;
     height: 600px;
     border-radius: 400px;
 }
+.nav li{
+    /* float: right; */
+    padding-right: 50px;
+    display: inline;
+    font-weight: bold;
+    padding-bottom: -20px;
+    font-size: 20px;
+    margin-left: 200px;
+}
+.nav{ 
+    height: 50px;
+    border-radius: 200px;
+    background-color: red;
+}

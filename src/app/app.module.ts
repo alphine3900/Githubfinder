@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchuserService } from './search-service/search.service';
+import { FormsModule } from '@angular/forms';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SearchuserService } from './search-service/search.service';
     
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       
       {path: 'home', component:HomeComponent },
