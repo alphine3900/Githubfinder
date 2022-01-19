@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-//  import { Searchservice } from ''; 
+
  import { SearchuserService } from '../search-service/search.service';
 
 @Component({
